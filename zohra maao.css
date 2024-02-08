@@ -1,0 +1,103 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(Montserrat-Regular.ttf);
+  }
+
+@font-face {
+    font-family: VinkaDuscha;
+    src: url(VinkaDuscha.ttf);
+  }
+
+p, li {
+    font-family: Montserrat;
+}
+
+h1 {
+    padding: 2%;
+    margin-left: 5%;
+    font-family: VinkaDuscha;
+}
+
+h2 {
+    font-size: 20px;
+    padding-bottom: 2%;
+    font-family: VinkaDuscha;
+}
+
+.intro1 {
+    text-align: right;
+}
+
+.intro2 {
+    text-align: left;
+}
+
+.formations {
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.imgFormation {
+    margin-right: 2%;
+}
+
+#débutant {
+    background-color: #97B3B6;
+    text-align: left;
+    padding: 10px;
+}
+
+#intermédiaire {
+    background-color: #FDC7C9;
+    text-align: left;
+    padding: 10px;
+}
+
+#avancé {
+    background-color: #D9B7F4;
+    text-align: left;
+    padding: 10px;
+}
+
+#pro {
+    background-color: #C94827;
+    text-align: left;
+    padding: 10px;
+    color: white;
+}
+
+#contactC {
+    text-align: left;
+    background-color: #FDC7C9;
+    margin-bottom: 20%;
+    padding: 2%;
+    border-radius: 5%;
+}
+
+#contactZ {
+    text-align: right;
+    margin-top: 20%;
+    background-color: #FDC7C9;
+    padding: 2%;
+    border-radius: 5%;
+}
+
+#imageEquipe {
+    margin-bottom: 2%;
+}
+
+footer {
+    margin-top: 2%;
+    background-color: #4DA1A9;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+
+#footerText {
+    padding-top: 2%;
+}
+
+#footerText a {
+    color: black;
+}
