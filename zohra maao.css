@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 @font-face {
     font-family: Montserrat;
     src: url(Montserrat-Regular.ttf);
@@ -7,6 +12,32 @@
     font-family: VinkaDuscha;
     src: url(VinkaDuscha.ttf);
   }
+
+body a {
+    font-family: Montserrat;
+    color: black;
+}
+body a:hover {
+    font-weight: bold;
+}
+nav {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+nav img {
+ height: 30px;
+ width: 30px;
+ padding: 0px 5px;
+}
+
+header {
+    background-image: url(header.png);
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+}
 
 p, li {
     font-family: Montserrat;
@@ -24,48 +55,69 @@ h2 {
     font-family: VinkaDuscha;
 }
 
-.intro1 {
-    text-align: right;
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    margin: 2% 10%;
+    padding: 20px;
+    border: 10px beige solid;
 }
 
-.intro2 {
+#texte {
+    width: 400px;
+    text-align: center;
+}
+
+#texte ul {
     text-align: left;
 }
 
-.formations {
+.formation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 2%;
-    margin-top: 2%;
 }
 
 .imgFormation {
     margin-right: 2%;
+    margin-left: 2%;
 }
 
 #débutant {
     background-color: #97B3B6;
+    width: 350px;
     text-align: left;
-    padding: 10px;
+    padding: 30px;
 }
 
 #intermédiaire {
     background-color: #FDC7C9;
+    width: 350px;
     text-align: left;
-    padding: 10px;
+    padding: 30px;
 }
 
 #avancé {
     background-color: #D9B7F4;
+    width: 350px;
     text-align: left;
-    padding: 10px;
+    padding: 30px;
 }
 
 #pro {
     background-color: #C94827;
+    width: 350px;
     text-align: left;
-    padding: 10px;
+    padding: 30px;
     color: white;
 }
-
+.contact {
+    display: flex;
+    justify-content: center;
+}
 #contactC {
     text-align: left;
     background-color: #FDC7C9;
@@ -82,16 +134,38 @@ h2 {
     border-radius: 5%;
 }
 
+#contactZ a {
+    color: black;
+    font-family: Montserrat;
+}
+
 #imageEquipe {
     margin-bottom: 2%;
 }
 
+#button {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: #4DA1A9;
+    border: 2px #3A787E solid;
+    width: 100px;
+    padding: 5px;
+    margin: 2%;
+}
+
+button a {
+    text-decoration: none;
+}
 footer {
     margin-top: 2%;
     background-color: #4DA1A9;
     width: 100%;
     height: 80px;
     text-align: center;
+    padding-bottom: 0;
 }
 
 #footerText {
@@ -100,4 +174,37 @@ footer {
 
 #footerText a {
     color: black;
+}
+
+@media screen and (max-width:600px) {
+    header {
+        height: 100px;
+    }
+
+    .intro {
+        margin: 20px;
+    }
+
+    .formation {
+        margin: 20px 10px;
+    }
+    #mobileInline {
+        margin-top: 20px;
+    }
+    .contact {
+        display: block;
+        margin: 0 10px;
+    }
+    .contact img {
+        display: none;
+    }
+    #contactC {
+        margin-bottom: 20px;
+    }
+    #contactZ {
+        margin-top: 0;
+    }
+    button {
+        margin: 20px;
+    }
 }
